@@ -9,9 +9,7 @@ public class Player : MonoBehaviour
     public float maxX;
     public float minX;
     public float speed;
-    [SerializeField] float jumpforse;
-    public int coin;
-    public Text textcoin;
+    
  
     
     void Start()
@@ -61,12 +59,5 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (tag == "Platform")
-        {
-            coin++;
-        }
-
-    }
+   
 }
